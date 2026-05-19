@@ -8,11 +8,16 @@ step 4: navigate to github and signup (create your github account)
 	open cmd and enter below commands to refer/map your github account repo
 	>git config --global user.email "abhijeet.dhage@live.in"
 	>git config --global user.name "Abhijeet14895"
-step 4: basic commands
+step 5: basic commands
 	>git status
+	>dir > test1.txt # creating new file using command line
 	>git add # create new test1.txt file in folder 
 	>git commit -m "your message"
 	>git remote add origin "https://github.com/Abhijeet14895/Repo1.git" # Sign in to github, create repository, map with local repo
 	>git push -u origin main
 	>git log
 	>git --help
+step 6: Create branch
+	>git branch "branch name"
+step 7: Checkout branch
+	>git checkout "branch name"
