@@ -1,0 +1,17 @@
+step 1: check if git is already installed 
+	>git --version
+step 2: download and install git
+step 3: add your project to git
+	create a folder/tree structure and navigate to the location using cmd
+	>git init # this will add git binary file to the project/folder and start monitoring
+step 4: navigate to github and signup (create your github account)
+	>git config --global user.email "abhijeet.dhage@live.in"
+	>git config --global user.name "Abhijeet14895"
+step 4: basic commands
+	>git status
+	>git add # create new test1.txt file in folder 
+	>git commit -m "your message"
+	>git remote add origin "https://github.com/Abhijeet14895/Repo1.git" # Sign in to github, create repository, map with local repo
+	>git push -u origin main
+	>git log
+	>git --help
