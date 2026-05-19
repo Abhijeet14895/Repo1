@@ -18,9 +18,25 @@ step 5: basic commands
 	>git log
 	>git --help
 step 6: Create branch
-	>git branch "branch name"
+	>git branch <branch name>
 step 7: Checkout branch
-	>git checkout "branch name"
+	>git checkout <branch name>
 step 8: merge new branch in main
-	>git checkout main
-	>git merge "branch name"
+	>git checkout main # ensure you are in main/master branch
+	>git merge <branch name>
+step 9: delete branch
+	>git checkout main # ensure you are in main/master branch
+	>git branch -d "branch name" # delete from local
+	>git push origin --delete "branch name" # delete from remote
+step 10: add tag
+	>git checkout <branch name>
+	>git tag <tag name>
+	>git tag v1.0 OR git tag -a v1.0 -m "your message" # use 2nd one to create annotated tags
+	>git tag OR git tag -l "v1*" # use 2nd one to filter search"
+	>git show v1.0 # gives tag details
+	>git push origin v1.0 # pushing specific tag to remote
+	>git push origin --tags # pushing all tags to remote
+	>git tag --delete v1.0 # deleting specific tag
+	>git push origin --delete v1.0 # pushing to remote
+	>git tag -d v1.0 v1.1 # deleting multiple tags
+	>git push origin -d v1.0 v1.1 # pushing to remote
