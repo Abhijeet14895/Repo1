@@ -3,8 +3,9 @@ step 1: check if git is already installed
 step 2: download and install git
 step 3: add your project to git
 	create a folder/tree structure and navigate to the location using cmd
-	>git init # this will add git binary file to the project/folder and start monitoring
+	>git init # this will add git binary file to the project/folder and start tracking
 step 4: navigate to github and signup (create your github account)
+	open cmd and enter below commands to refer/map your github account repo
 	>git config --global user.email "abhijeet.dhage@live.in"
 	>git config --global user.name "Abhijeet14895"
 step 4: basic commands
