@@ -23,7 +23,10 @@ step 7: Checkout branch
 	>git checkout <branch name>
 step 8: merge new branch in main
 	>git checkout main # ensure you are in main/master branch
-	>git merge <branch name>
+	>git merge <branch name> # merge create a separate merge commit on current branch having latest changes from main
+step 9: rebase new branch with main branch latest changes
+	>git checkout <branch name>
+	>git rebase main # rebase changes the base to latest changes from main
 step 9: delete branch
 	>git checkout main # ensure you are in main/master branch
 	>git branch -d "branch name" # delete from local
@@ -40,3 +43,5 @@ step 10: add tag
 	>git push origin --delete v1.0 # pushing to remote
 	>git tag -d v1.0 v1.1 # deleting multiple tags
 	>git push origin -d v1.0 v1.1 # pushing to remote
+	>git checkout -b <branch name> <tag Name> # we can create branch from tag and checkout branch
+	>git tag <tag name> <reference of commit> # how to create a tag from past commit
